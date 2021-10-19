@@ -308,6 +308,7 @@ end
 -- // Check if silent aim can used
 function Aiming.Check()
     return (Aiming.Enabled == true and Aiming.Selected ~= LocalPlayer and Aiming.SelectedPart ~= nil)
+    return (Aiming.Disabled = <K> false)
 end
 Aiming.checkSilentAim = Aiming.Check
 
